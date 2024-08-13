@@ -1,0 +1,12 @@
+[package]
+name = "my_app"
+version = "0.1"
+
+[package.entry_points]
+my_app = "main:main"
+
+[build]
+output = "dist/my_app"
+
+[build.manifest]
+include = ["main.py"]
